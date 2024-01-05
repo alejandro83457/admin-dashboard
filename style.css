@@ -42,7 +42,7 @@ svg {
 }
 
 header {
-  background-color: lightgray;
+  background-color: white;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 
@@ -66,10 +66,11 @@ header {
 
 .heading-row1-2 input {
   margin-right: auto;
-  height: 25px;
+  height: 35px;
   border: none;
   border-radius: 20px;
   width: 750px;
+  background-color: rgb(236, 236, 236);
 }
 
 .heading-row2-2 .heading-3-4 {
@@ -79,6 +80,11 @@ header {
 .heading-3-4 {
   font-size: 20px;
   font-weight: bold;
+}
+
+.heading-4-4 ul {
+  display: flex;
+  gap: 2rem;
 }
 
 header svg {
@@ -95,7 +101,9 @@ main {
   gap: 1.2rem;
 }
 
-.projects-heading {
+.projects-heading,
+.announcements-heading,
+.trending-heading {
   font-size: 20px;
 }
 
@@ -117,6 +125,49 @@ main .projects ul li {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  border-radius: 15px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.side .announcements ul,
+.side .trending ul {
+  background-color: white;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.trending li {
+  display: flex;
+  gap: 1rem;
+}
+
+.trending .at-descr,
+.announcements .announcement-descr,
+.projects .project-descr {
+  color: gray;
+}
+
+.side svg {
+  fill: black;
+}
+
+.side li {
+  align-items: center;
+}
+
+.side .announcement-subheading {
+  font-weight: bold;
 }
 
 .project-icons {
@@ -153,8 +204,9 @@ img {
 
 button {
   border: none;
-  height: 30px;
-  width: 75px;
+  height: 40px;
+  width: 100px;
   border-radius: 20px;
   font-weight: bold;
+  font-size: 15px;
 }
