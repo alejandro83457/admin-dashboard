@@ -45,6 +45,41 @@ header {
   background-color: lightgray;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.heading-row1-2,
+.heading-row2-2 {
+  padding: 0 3rem;
+}
+
+.heading-row1-2,
+.heading-row2-2,
+.heading-row2-2 ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.heading-row1-2 input {
+  margin-right: auto;
+  height: fit-content;
+}
+
+.heading-row2-2 .heading-3-4 {
+  margin-right: auto;
+}
+
+.heading-3-4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header svg {
+  fill: black;
 }
 
 main {
