@@ -87,6 +87,27 @@ header svg {
 
 main {
   background-color: lightsteelblue;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 3fr 1fr;
+
+  padding: 1.5rem;
+  gap: 1.2rem;
+}
+
+.projects-heading {
+  font-size: 20px;
+}
+
+main .projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+main .projects ul li {
+  height: 300px;
+  background-color: white;
 }
 
 body {
