@@ -114,7 +114,8 @@ main {
 
 main .projects ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 1.5rem;
 }
 
@@ -130,6 +131,7 @@ main .projects ul li {
   border-radius: 15px;
 
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border-left: 15px solid gray; */
 }
 
 .side {
@@ -189,7 +191,8 @@ main .projects ul li {
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
